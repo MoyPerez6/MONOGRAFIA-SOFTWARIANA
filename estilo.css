@@ -1,0 +1,403 @@
+* {
+	padding: 0px;
+	margin: 0px;
+
+}
+
+body {
+   width: 100%;
+	height: 100vh;
+	color: #fff;		
+	background: linear-gradient(45deg,#B161B7,#425CB4,#B98BE4,#5FFF8E);
+	background-size: 400% 400%;
+	position: relative;
+	animation: cambiar 2s ease-in-out infinite;
+}
+
+@keyframes cambiar {
+	0% {background-position: 0 50%; }
+	50% {background-position: 100% 50%; }
+	100%{background-position: 0 50%;}
+}
+
+.titulo {    
+    color: black;
+    margin: 15px;
+    font-size: 90px;
+    font-family: 'Roboto', sans-serif;
+}
+
+.titulo h1 {
+	display: inline-block;
+	position: relative;
+    margin: 50px;
+}
+
+.titulo h1::after,.titulo h1::before{
+	content: '';
+	position: absolute;
+	width: 140px;
+	height: 10px;
+	background: black;
+	top:0.6em;
+	transform: scale(0);
+	transition: all 0.4s ease-in;
+}
+
+.titulo h1:hover::before, .titulo h1:hover::after {
+	transform: scale(1);
+}
+
+
+.titulo h1::before{
+	left: -160px;
+}
+
+
+.titulo h1::after{
+	right: -160px;
+}
+
+.subtitulo {
+    color: black;
+    margin: 20px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 70px;
+}
+
+.subtitulo h1 {
+	display: inline-block;
+	position: relative;
+    margin: 50px;
+}
+.subtitulo h1::after,.subtitulo h1::before{
+	content: '';
+	position: absolute;
+	width: 140px;
+	height: 10px;
+	background: black;
+	top:0.6em;
+	transform: scale(0);
+	transition: all 0.4s ease-in;
+}
+
+.subtitulo h1:hover::before, .subtitulo h1:hover::after {
+	transform: scale(1);
+}
+
+.subtitulo h1::before{
+	left: -160px;
+}
+
+.subtitulo h1::after{
+	right: -160px;
+}
+
+.civilizacion {
+    color: black;
+    margin: 40px;
+    margin-top: 40px;
+    font-size: 40px;
+}
+.civilizacion h1 {
+	display: inline-block;
+	position: relative;
+    margin: 50px;
+}
+
+.civilizacion h1::after,.civilizacion h1::before{
+	content: '';
+	position: absolute;
+	width: 140px;
+	height: 10px;
+	background: red;
+	top:0.6em;
+	transform: scale(0);
+	transition: all 0.4s ease-in;
+}
+.civilizacion h1:hover::before, .civilizacion h1:hover::after {
+	transform: scale(1);
+}
+.civilizacion h1::before{
+	left: -160px;
+}
+.civilizacion h1::after{
+	right: -160px;
+}
+
+.palacio img{
+    float: left;
+    height: 700px;
+    width: 700px;
+    border-radius: 40px;
+    margin-right: 100px;
+    margin-bottom: 100px;
+    filter: drop-shadow(-15px 6px 50px #00FFFF);
+}
+.persona img{
+    float: right;
+    height: 700px;
+    width: 700px;
+    border-radius: 40px;
+    margin-left: 60px;
+    margin-bottom: 170px;
+    filter: drop-shadow(-15px 6px 50px #F4A460);
+}
+
+.ubicacion {
+	color: black;
+    margin: 40px;
+    margin-top: 40px;
+    font-size: 40px;
+}
+.ubicacion h1 {
+	display: inline-block;
+	position: relative;
+    margin: 50px;
+}
+
+.ubicacion h1::after,.ubicacion h1::before{
+	content: '';
+	position: absolute;
+	width: 140px;
+	height: 10px;
+	background: green;
+	top:0.6em;
+	transform: scale(0);
+	transition: all 0.4s ease-in;
+}
+.ubicacion h1:hover::before, .ubicacion h1:hover::after {
+	transform: scale(1);
+}
+.ubicacion h1::before{
+	left: -160px;
+}
+.ubicacion h1::after{
+	right: -160px;
+}
+
+.mapa img{
+	float: left;
+    height: 650px;
+    width: 650px;
+    margin-right: 100px;
+    margin-left: 20px;
+   	filter: drop-shadow(-15px 6px 50px #6B8E23);
+}
+
+.caracteristicas {
+	color: black;
+    margin: 15px;
+    margin-top: 35px;
+    font-size: 40px;
+}
+
+.caracteristicas h1 {
+	display: inline-block;
+	position: relative;
+    margin: 50px;
+}
+
+.caracteristicas h1::after,.caracteristicas h1::before{
+	content: '';
+	position: absolute;
+	width: 140px;
+	height: 10px;
+	background: yellow;
+	top:0.6em;
+	transform: scale(0);
+	transition: all 0.4s ease-in;
+}
+.caracteristicas h1:hover::before, .caracteristicas h1:hover::after {
+	transform: scale(1);
+}
+.caracteristicas h1::before{
+	left: -160px;
+}
+.caracteristicas h1::after{
+	right: -160px;
+}
+
+.ambicion img{
+	float: right;
+    height: 600px;
+    width: 600px;
+    margin-right: 40px;
+    filter: drop-shadow(-15px 6px 50px #7FFFD4);
+}
+
+.solo img{
+	float: left;
+    height: 600px;
+    width: 600px;
+    margin-right: 100px;
+    margin-left: 20px;
+    filter: drop-shadow(-15px 6px 50px #FF8C00);
+}
+
+.control img{
+	float: right;
+	border-radius: 40px;
+    height: 600px;
+    width: 600px;
+    margin-right: 40px;
+    filter: drop-shadow(-15px 6px 50px #778899);
+}
+
+.economia {
+	color: black;
+    margin: 15px;
+    margin-top: 35px;
+    font-size: 40px;
+}
+
+.economia h1 {
+	display: inline-block;
+	position: relative;
+    margin: 50px;
+}
+
+.economia h1::after,.economia h1::before{
+	content: '';
+	position: absolute;
+	width: 140px;
+	height: 10px;
+	background: red;
+	top:0.6em;
+	transform: scale(0);
+	transition: all 0.4s ease-in;
+}
+.economia h1:hover::before, .economia h1:hover::after {
+	transform: scale(1);
+}
+.economia h1::before{
+	left: -160px;
+}
+.economia h1::after{
+	right: -160px;
+}
+
+.codigo img{
+    float: left;
+    border-radius: 40px;
+    height: 700px;
+    width: 700px;
+    margin-right: 100px;
+    filter: drop-shadow(-15px 6px 50px #FF69B4);
+
+}
+.comida img{
+    float: right;
+    border-radius: 40px;
+    height: 700px;
+    width: 700px;
+    margin-left: 50px;
+	filter: drop-shadow(-15px 6px 50px #FF69B4);
+}
+
+.vestimenta {
+	color: black;
+    margin: 15px;
+    margin-top: 35px;
+    font-size: 40px;
+}
+
+.vestimenta h1 {
+	display: inline-block;
+	position: relative;
+    margin: 50px;
+}
+
+.vestimenta h1::after,.vestimenta h1::before{
+	content: '';
+	position: absolute;
+	width: 140px;
+	height: 10px;
+	background: blue;
+	top:0.6em;
+	transform: scale(0);
+	transition: all 0.4s ease-in;
+}
+.vestimenta h1:hover::before, .vestimenta h1:hover::after {
+	transform: scale(1);
+}
+.vestimenta h1::before{
+	left: -160px;
+}
+.vestimenta h1::after{
+	right: -160px;
+}
+
+.formal img{
+    float: left;
+    border-radius: 40px;
+    height: 700px;
+    width: 700px;
+    margin-right: 50px;
+    filter: drop-shadow(-15px 6px 50px #008080);
+
+}
+.informal img{
+    float: right;
+    border-radius: 40px;
+    height: 700px;
+    width: 700px;
+    margin-left: 50px;
+    filter: drop-shadow(-15px 6px 50px #008080);
+}
+
+.fin {
+	color: black;
+    margin: 15px;
+    margin-top: 35px;
+    font-size: 40px;
+}
+
+.fin h1 {
+	display: inline-block;
+	position: relative;
+    margin: 50px;
+}
+
+.fin h1::after,.fin h1::before{
+	content: '';
+	position: absolute;
+	width: 140px;
+	height: 10px;
+	background: #7FFFD4;
+	top:0.6em;
+	transform: scale(0);
+	transition: all 0.4s ease-in;
+}
+
+.fin h1:hover::before, .fin h1:hover::after {
+	transform: scale(1);
+}
+
+.fin h1::before{
+	left: -160px;
+}
+
+.fin h1::after{
+	right: -160px;
+}
+
+.inteligencia img{
+    float: left;
+    border-radius: 40px;
+    height: 800px;
+    width: 800px;
+    margin-right: 50px;
+    margin-bottom: 20px;
+	filter: drop-shadow(-15px 6px 50px #FF69B4);
+}
+
+.virus img{
+    float: right;
+    border-radius: 40px;
+    height: 700px;
+    width: 700px;
+    margin-left: 50px;
+    filter: drop-shadow(-15px 6px 50px yellow);
+}
+
